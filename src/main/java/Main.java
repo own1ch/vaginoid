@@ -27,7 +27,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello World!");
-        btn.setText("Say 'Hello World'");
+        btn.setText("Say 'Hello World'");\
         btn.setOnAction(e ->
                 System.out.println("Hello World!"));
 
