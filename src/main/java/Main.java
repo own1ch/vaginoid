@@ -27,13 +27,12 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello World!");
-        btn.setText("Say 'Hello World'");\
+        btn.setText("Say 'Hello World'");
         btn.setOnAction(e ->
                 System.out.println("Hello World!"));
 
-        resultBtn.setOnAction(event -> {
-            resultLabel.setText(String.valueOf(MathOperations.sum(Double.parseDouble(firstField.getText()), Double.parseDouble(secondField.getText()))));
-        });
+        resultBtn.setOnAction(event ->
+                resultLabel.setText(String.valueOf(MathOperations.sum(Double.parseDouble(firstField.getText()), Double.parseDouble(secondField.getText())))));
         StackPane root = new StackPane();
         root.getChildren().add(createTestPane());
         primaryStage.setScene(new Scene(root, 1000, 400));
