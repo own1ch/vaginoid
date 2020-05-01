@@ -28,7 +28,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello World!");
         btn.setText("Say 'Hello World'");
-        btn.setOnAction(event ->
+        btn.setOnAction(e ->
                 System.out.println("Hello World!"));
 
         resultBtn.setOnAction(event -> {
