@@ -28,8 +28,6 @@ public class Main extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello World!");
         btn.setText("Say 'Hello World'");
-        btn.setOnAction(event ->
-                System.out.println("Hello World!"));
 
         resultBtn.setOnAction(event -> {
             resultLabel.setText(String.valueOf(MathOperations.sum(Double.parseDouble(firstField.getText()), Double.parseDouble(secondField.getText()))));
